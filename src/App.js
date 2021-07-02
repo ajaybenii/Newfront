@@ -26,7 +26,7 @@ function App() {
 
   // Post a todo
   const addTodoHandler = () => {
-    axios.post('https://new-bg.herokuapp.com/api/todo', { 'title': title, 'description': desc })
+    axios.post('https://new-bg.herokuapp.com/api/todo/', { 'title': title, 'description': desc })
       .then(res => console.log(res))
 };
 
